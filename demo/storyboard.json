@@ -1,0 +1,12 @@
+{
+  "total_s": 255,
+  "shots": [
+    {"t_start": 0, "t_end": 11, "visual": "galaxie", "motion": "zoom avant", "caption": "Chapitre 1 — Le constat", "image": "images/galaxy.jpg", "covers_text": "ouverture"},
+    {"t_start": 11, "t_end": 33, "visual": "ciel qui s'ouvre", "motion": "zoom arrière", "caption": "L'univers grandit", "image": "images/galaxy.jpg", "covers_text": "expansion"},
+    {"t_start": 33, "t_end": 61, "visual": "voiture de nuit", "motion": "travelling", "caption": "Une voiture qui devrait freiner", "image": "images/car.jpg", "covers_text": "Riess Perlmutter"},
+    {"t_start": 61, "t_end": 93, "visual": "ressorts d'or", "motion": "lent zoom", "caption": "Des ressorts dans le vide", "image": "images/springs.jpg", "covers_text": "énergie noire"},
+    {"t_start": 93, "t_end": 127, "visual": "addition et pièce", "motion": "travelling note vers pièce", "caption": "Premier trou", "image": "images/bill.jpg", "covers_text": "120 zéros"},
+    {"t_start": 127, "t_end": 197, "visual": "carte + supernova", "motion": "zoom vers l'explosion", "caption": "Second trou", "image": "images/survey.jpg", "covers_text": "DESI Camilleri Sah"},
+    {"t_start": 197, "t_end": 255, "visual": "trois portes", "motion": "avance vers la porte dorée", "caption": "La porte C", "image": "images/doors.jpg", "covers_text": "ouverture chapitre 2"}
+  ]
+}
