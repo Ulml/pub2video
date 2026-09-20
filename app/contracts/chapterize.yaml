@@ -1,0 +1,19 @@
+id: chapterize
+title: Découper en chapitres
+pass_threshold: 0.95
+input: PlainExplanation
+output: "Chapters {items: [{n, title, purpose, beats[]}]}"
+must:
+  - "Le chapitre 1 est toujours \u00ab Le constat et le problème \u00bb."
+  - Produire 4 à 8 chapitres.
+  - Chaque chapitre a un but en une phrase.
+  - Traiter d'abord uniquement le chapitre 1 dans le flux courant.
+forbidden:
+  - Fusionner constat et idée théorique dans le chapitre 1.
+checks:
+  - id: nombre
+    rule: 4 à 8 chapitres
+  - id: constat
+    rule: titre du chapitre 1 contient constat
+  - id: purpose
+    rule: chaque item a un purpose

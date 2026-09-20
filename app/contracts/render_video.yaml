@@ -1,0 +1,22 @@
+id: render_video
+title: Vidéo muette
+pass_threshold: 0.95
+input: Storyboard
+output: "VideoArtifact {path, duration_s, silent, shots_encoded}"
+must:
+  - Vidéo muette.
+  - Durée totale égale à la somme des plans, à 5 % près.
+  - Images photoréalistes ou design, avec un mouvement lent.
+  - Fichier mp4 lisible.
+forbidden:
+  - Bande-son.
+  - Plans statiques sans aucun mouvement.
+checks:
+  - id: chemin
+    rule: path non vide
+  - id: muet
+    rule: silent is true
+  - id: duree
+    rule: duration_s > 10
+  - id: plans
+    rule: shots_encoded >= 5

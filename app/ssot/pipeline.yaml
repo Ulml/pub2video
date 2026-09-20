@@ -1,0 +1,29 @@
+# SSOT — le flux de cette conversation, pas à pas.
+# Toute modification du pipeline passe par ce fichier.
+version: 1
+name: pub2video
+default_pass_threshold: 0.95
+max_retries_per_agent: 2
+
+stages:
+  - id: ingest
+    title: Entrée
+    purpose: Accepter une URL vidéo ou un PDF et normaliser la source.
+  - id: extract_publication
+    title: Extraire la publication
+    purpose: Identifier la publication dont il est question et en extraire le contenu utile.
+  - id: explain_plain
+    title: Expliquer sans jargon
+    purpose: Dire toute la publication en langage courant, sans rien omettre.
+  - id: chapterize
+    title: Découper en chapitres
+    purpose: Découper l'explication en chapitres, le premier étant le constat.
+  - id: narrate
+    title: Récit écrit
+    purpose: Transformer le chapitre en texte raconté, citations courtes, analogies.
+  - id: storyboard
+    title: Storyboard visuel
+    purpose: Une idée visuelle par plan, moins de plans, image qui porte le récit.
+  - id: render_video
+    title: Vidéo muette
+    purpose: Monter une vidéo sans son, calée sur le texte, images qui bougent.

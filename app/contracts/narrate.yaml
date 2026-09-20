@@ -1,0 +1,28 @@
+id: narrate
+title: Récit écrit
+pass_threshold: 0.95
+input: "Chapter 1 + Publication"
+output: "Narration {text, citations[], word_count}"
+must:
+  - "Style écrit raconté, pas \u00ab Slide 1 \u00bb, pas de liste sèche."
+  - "Citations au format \u00ab Nom1, Nom2, année \u00bb."
+  - "Relier les idées par \u00ab Mais il y a un premier trou \u00bb puis \u00ab Mais il y a un second trou \u00bb."
+  - Analogies concrètes (voiture, ressorts, addition, moteur).
+  - Terminer sur l'ouverture du chapitre suivant.
+forbidden:
+  - Jargon non traduit.
+  - Plus de deux noms par citation.
+  - "Étiquettes Slide X."
+checks:
+  - id: style
+    rule: le mot slide est absent
+  - id: citations
+    rule: au plus deux virgules de noms par citation
+  - id: premier_trou
+    rule: contient premier trou
+  - id: second_trou
+    rule: contient second trou
+  - id: suite
+    rule: ouvre le chapitre suivant
+  - id: longueur
+    rule: texte > 800 caractères

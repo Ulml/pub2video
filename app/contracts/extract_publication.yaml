@@ -1,0 +1,24 @@
+id: extract_publication
+title: Extraire la publication
+pass_threshold: 0.95
+input: SourceRecord
+output: "Publication {title, authors, year, venue|arxiv, summary_points[], related[]}"
+must:
+  - Extraire la publication dont il est question, pas un commentaire autour.
+  - Citer titre, auteurs, année, revue ou arXiv s'ils sont connus.
+  - Lister au moins trois résultats principaux en points factuels.
+  - "Si plusieurs papiers : les nommer tous et désigner le papier théorique central."
+forbidden:
+  - Inventer un DOI, un titre ou un auteur.
+  - Mélanger deux papiers en un seul.
+checks:
+  - id: titre
+    rule: title non vide
+  - id: auteurs
+    rule: authors non vide
+  - id: annee
+    rule: year présent
+  - id: points
+    rule: summary_points >= 3
+  - id: source
+    rule: venue ou arxiv présent

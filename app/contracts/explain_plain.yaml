@@ -1,0 +1,22 @@
+id: explain_plain
+title: Expliquer sans jargon
+pass_threshold: 0.95
+input: Publication
+output: "PlainExplanation {paragraphs[], analogies[]}"
+must:
+  - Tout dire, sans jargon.
+  - Remplacer chaque terme technique par une phrase de tous les jours.
+  - Garder idée, mécanisme, prédictions et limites.
+  - Ajouter une analogie par idée clé.
+forbidden:
+  - Laisser un terme technique brut sans traduction.
+  - Omettre les limites avouées par l'auteur.
+checks:
+  - id: longueur
+    rule: texte > 400 caractères
+  - id: analogies
+    rule: analogies >= 3
+  - id: jargon
+    rule: pas de termes bruts listés
+  - id: limites
+    rule: mention limite / ne fait pas / pas encore

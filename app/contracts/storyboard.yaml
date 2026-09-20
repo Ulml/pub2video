@@ -1,0 +1,20 @@
+id: storyboard
+title: Storyboard visuel
+pass_threshold: 0.95
+input: Narration
+output: "Storyboard {shots: [{t_start, t_end, visual, motion, caption, covers_text}]}"
+must:
+  - 5 à 9 plans pour le chapitre 1.
+  - Un schéma ou une image porteuse par plan, pas un mur de texte.
+  - Durées calées sur le texte lu à environ 150 mots par minute.
+  - Motion décrite (zoom, travelling, ouverture).
+forbidden:
+  - Un plan par phrase.
+  - Texte intégral du récit à l'écran.
+checks:
+  - id: nombre_plans
+    rule: 5 à 9 plans
+  - id: durees
+    rule: t_start et t_end présents
+  - id: motion
+    rule: motion non vide

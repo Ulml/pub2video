@@ -1,0 +1,20 @@
+id: ingest
+title: Entrée
+pass_threshold: 0.95
+input: "source.kind in {video, youtube, pdf, demo} + url|path"
+output: "SourceRecord {kind, title, raw_text, origin}"
+must:
+  - Accepter uniquement une vidéo, une URL YouTube, un PDF ou le mode démo.
+  - Produire kind, origin et un raw_text non vide dès que le contenu est extractable.
+  - Ne pas inventer une publication à cette étape.
+  - Conserver l'origine exacte (URL ou nom de fichier).
+forbidden:
+  - Analyser le fond scientifique.
+  - Choisir déjà la publication.
+checks:
+  - id: kind_valide
+    rule: kind in video|youtube|pdf|demo
+  - id: origin
+    rule: origin non vide
+  - id: raw_text
+    rule: raw_text > 40 caractères

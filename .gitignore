@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+output/
+output/settings.yaml
+.DS_Store
+*.tmp.mp4
