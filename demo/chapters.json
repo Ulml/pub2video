@@ -1,0 +1,10 @@
+{
+  "items": [
+    {"n": 1, "title": "Le constat et le problème", "purpose": "Pourquoi l'explication habituelle ne suffit plus.", "beats": ["observation", "ressorts", "premier trou", "second trou", "trois portes"]},
+    {"n": 2, "title": "L'idée centrale", "purpose": "On ne peut pas tout savoir en même temps.", "beats": []},
+    {"n": 3, "title": "La loi d'expansion", "purpose": "Ce que le flou change dans les équations.", "beats": []},
+    {"n": 4, "title": "Aujourd'hui", "purpose": "Une poussée qui s'affaiblit.", "beats": []},
+    {"n": 5, "title": "Au tout début", "purpose": "Un rebond au lieu d'un point infini.", "beats": []},
+    {"n": 6, "title": "Limites et tests", "purpose": "Ce que le modèle ne fait pas encore.", "beats": []}
+  ]
+}

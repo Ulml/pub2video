@@ -1,0 +1,8 @@
+Vidéo Vision IA, « Mais que se passe-t-il avec l'univers ? ».
+Publications citées : Savvas M. Koushiappas, Physical Review D 114, 043525 (13 août 2026), arXiv:2604.27771,
+A Cosmological Uncertainty Relation and Late-Universe Acceleration.
+Aussi DESI 2025-2026, Camilleri et Davis 2026 (catalogue Unite, 2884 supernovae),
+Sah, Rameez et Sarkar, MNRAS 549 (2026).
+Idée : on ne peut pas connaître en même temps la taille de l'univers et sa vitesse de croissance.
+Cela modifie la loi d'expansion. Pour un exposant positif, poussée tardive qui s'affaiblit (w au-dessus de moins un).
+Pour un exposant assez négatif, rebond au début. Pas de particule nouvelle. Limites : ne résout pas H0, pas encore une théorie complète.

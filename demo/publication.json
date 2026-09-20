@@ -1,0 +1,20 @@
+{
+  "title": "A Cosmological Uncertainty Relation and Late-Universe Acceleration",
+  "authors": ["Savvas M. Koushiappas"],
+  "year": 2026,
+  "venue": "Physical Review D 114, 043525",
+  "arxiv": "2604.27771",
+  "summary_points": [
+    "On ne peut pas connaître en même temps, avec une précision parfaite, la taille de l'univers et sa vitesse de croissance.",
+    "Cette limite ajoute une correction du côté de la géométrie, pas une nouvelle matière.",
+    "Si l'exposant est positif, cela ressemble aujourd'hui à une poussée qui s'affaiblit.",
+    "Si l'exposant est assez négatif, l'univers rebondit au lieu de partir d'un point infini.",
+    "Le modèle n'ajoute aucune particule. L'auteur dit qu'il n'explique pas l'écart sur la vitesse actuelle et que ce n'est pas encore une théorie complète."
+  ],
+  "related": [
+    "Riess, Perlmutter, 1998 et 1999",
+    "DESI, 2025-2026",
+    "Camilleri, Davis, 2026",
+    "Sah, Rameez, 2026"
+  ]
+}
